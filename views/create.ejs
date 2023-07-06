@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("layouts/header"); -%>
+  <body>
+    <%- include("layouts/navbar"); -%>
+
+    <div class="container">
+      <h1>Create New Post</h1>
+
+      <div class="create-content">
+        <form action="/post" method="POST">
+          <div class="input-group">
+            <label for="title">Title</label>
+            <input type="text" name="title" />
+          </div>
+
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea cols="30" rows="10" name="message"></textarea>
+          </div>
+          <div class="submit-btn">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <%- include("layouts/footer"); -%> <%- include("layouts/scripts"); -%>
+  </body>
+</html>
