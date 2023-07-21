@@ -4,5 +4,25 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  background: rgb(208, 243, 255);
+  scroll-behavior: smooth;
+}
+.wrapper {
+  width: min(80%, 100rem);
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  padding: 2rem;
+  background: lightskyblue;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  padding-left: 1rem;
 }
